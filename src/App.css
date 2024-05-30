@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h1 {
+    font-size: 2em;
+}
+img {
+    width: 100%;
+    display: block;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+input,
+button {
+    font-family: inherit;
+    font-size: 1.1em;
+    /* border: none; */
+}
+input {
+    outline: none;
+}
+button {
+    cursor: pointer;
+}

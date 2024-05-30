@@ -1,0 +1,7 @@
+.SelectType__container {
+    width: 9em;
+    height: 55%;
+    border: none;
+    box-shadow: 0.2em 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+    display: flex;    
+}

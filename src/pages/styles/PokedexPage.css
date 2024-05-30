@@ -1,0 +1,154 @@
+
+.pokepage__header__container {
+    background-image: linear-gradient(to bottom, #FF0000 70%, #000000 30%);
+    width: 100%;
+    height: 7em;
+    position: relative;
+    padding: 0.2em;
+}
+.pokepage__header {
+    position: relative;
+    padding: 0.8em;
+    padding-left: 4em;
+    padding-top: 2.6em;
+}
+.pokepage__header__container::before,
+.pokepage__header__container::after {
+    content: "";
+    position: absolute;
+    border: 0.4em solid black; 
+    border-radius: 50%;
+}
+
+.pokepage__header__container::before {
+    width: 3em; 
+    height: 3em;
+    top: 85%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    background-color: white; 
+}
+
+.pokepage__header__container::after {
+    width: 1.5em; 
+    height: 1.5em;
+    top: 85%; 
+    left: 85%;
+    transform: translate(-50%, -50%);
+    background-color: #3B3B38; 
+}
+
+
+.pokepage__header__img {
+    width: 40%;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 20em;
+    position: absolute;
+    top: 2.2em;
+    left: 5em;
+    bottom: 1em;
+    right: 10em;
+    object-fit: contain;
+}
+
+.pokepage__p span:first-child {
+    color: red;
+    font-weight: bold;
+}
+.pokepage__p {
+    padding: 2em 6.5em;
+    font-size: 1.3em;
+}
+
+.pokepage__form {
+    display: flex;
+    font-size: 1em;
+    width: 35em;
+    padding: 0em 2em 3em 8.5em;
+}
+.pokepage__input,
+.pokepage__button {
+    padding: 1em;
+    border: none;
+    box-shadow: 0.2em 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+}
+.pokepage__input {
+    border-radius: 0;
+    flex: 1;
+}
+.pokepage__button {
+    border-radius: 0;
+    background-color: #FF0000;
+    color: white;
+    cursor: pointer;
+    &:hover {
+        filter: brightness(0.8);
+    }
+}
+.form__input__container {
+    display: flex;
+}
+.pokepage__filter {
+    width: 35em;
+}
+
+.pagination__container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 1em;
+
+}
+.pagination__button {
+    width: 6em;
+    margin: 0 1.5em;
+    padding: 0 1em;
+    border-radius: 1em;
+    background-color: #FF0000;
+    color: white;
+    &:hover {
+        filter: brightness(0.8);
+    }
+}
+.pagination {
+    width: 4em;
+    text-align: center;
+    color: #000000;
+    font-size: 1.3em;
+}
+.pagination__value {
+    color: #FF0000;
+}
+.pagination__slash {
+    margin: 0.5em;
+    color: #a0a0a0;
+}
+
+.pokecards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    grid-gap: 1.5em;
+    margin: 1em;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .pokepage__container {
+        font-size: 0.8em;
+    }
+
+    .pokepage__form {
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .pokepage__container {
+        font-size: 1.2em;
+    }
+}
